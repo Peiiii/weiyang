@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Link } from "@/components/ui/link"
 import { Image } from "@/components/ui/image"
 import { BookOpen, Brain, MessageSquare, Sparkles } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
                   个性化学习指导，解答疑问，推荐学习内容，提供即时反馈，让语文学习更高效、更有趣。
                 </p>
                 <Button asChild size="lg" className="w-full md:w-auto">
-                  <Link href="/ai-tutor">
+                  <Link to="/ai-tutor">
                     <Sparkles className="mr-2 h-4 w-4" />
                     开始对话
                   </Link>
@@ -44,7 +44,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-6">
-              <Link href="/reading" className="flex flex-col items-center gap-4">
+              <Link to="/reading" className="flex flex-col items-center gap-4">
                 <div className="h-16 w-16 rounded-full bg-blue-50 flex items-center justify-center">
                   <BookOpen className="h-8 w-8 text-blue-500" />
                 </div>
@@ -58,7 +58,7 @@ export default function Home() {
 
           <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-6">
-              <Link href="/writing" className="flex flex-col items-center gap-4">
+              <Link to="/writing" className="flex flex-col items-center gap-4">
                 <div className="h-16 w-16 rounded-full bg-green-50 flex items-center justify-center">
                   <MessageSquare className="h-8 w-8 text-green-500" />
                 </div>
@@ -72,7 +72,7 @@ export default function Home() {
 
           <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-6">
-              <Link href="/vocabulary" className="flex flex-col items-center gap-4">
+                <Link to="/vocabulary" className="flex flex-col items-center gap-4">
                 <div className="h-16 w-16 rounded-full bg-purple-50 flex items-center justify-center">
                   <Brain className="h-8 w-8 text-purple-500" />
                 </div>

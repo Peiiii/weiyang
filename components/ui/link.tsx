@@ -14,6 +14,8 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       window.location.href = href;
     };
 
+    const isExternal = href.startsWith('http') || href.startsWith('//');
+
     return (
       <a
         ref={ref}
