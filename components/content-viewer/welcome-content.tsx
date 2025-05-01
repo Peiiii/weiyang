@@ -1,10 +1,10 @@
 "use client"
 
-import Image from "next/image"
 import { BookOpen, FileText, GraduationCap, BookMarked } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
+import { Image } from "@/components/ui/image"
 
 interface WelcomeContentProps {
   onPoemClick?: (poemId: string) => void

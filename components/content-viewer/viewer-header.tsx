@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, ArrowRight, ExternalLink, Home, BookmarkPlus } from "lucide-react"
 import { useHistory } from "./history-provider"
-import Link from "next/link"
+import { Link } from "@/components/ui/link"
 import { useState } from "react"
 
 interface ViewerHeaderProps {

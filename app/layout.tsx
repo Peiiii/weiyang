@@ -1,29 +1,19 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+'use client'
 
-const inter = Inter({ subsets: ["latin"] })
+import { ThemeProvider } from '@/components/theme-provider'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { routes } from '@/src/routes'
+import './globals.css'
 
-export const metadata: Metadata = {
-  title: "语文学习平台",
-  description: "AI时代的语文学习应用，大道至简",
-    generator: 'v0.dev'
-}
+const router = createBrowserRouter(routes)
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout() {
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
+    <ThemeProvider
+      defaultTheme="system"
+      storageKey="vite-ui-theme"
+    >
+      <RouterProvider router={router} />
+    </ThemeProvider>
   )
 }

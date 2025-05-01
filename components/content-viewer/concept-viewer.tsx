@@ -1,10 +1,10 @@
 "use client"
 
 import type { Concept } from "@/types/message"
-import Image from "next/image"
+import { Image } from "@/components/ui/image"
 import { Button } from "@/components/ui/button"
 import { ThumbsUp, ExternalLink } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/components/ui/link"
 
 interface ConceptViewerProps {
   concept: Concept

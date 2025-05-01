@@ -4,7 +4,7 @@ import type React from "react"
 
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Send, BookOpen, Sparkles } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/components/ui/link"
 import { useState, useRef, useEffect } from "react"
 import { v4 as uuidv4 } from "uuid"
 

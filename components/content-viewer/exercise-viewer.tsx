@@ -7,7 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { CheckCircle, AlertCircle } from "lucide-react"
-import Image from "next/image"
+import { Image } from "@/components/ui/image"
 
 interface ExerciseViewerProps {
   exercise: Exercise

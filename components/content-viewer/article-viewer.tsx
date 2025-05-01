@@ -1,7 +1,7 @@
 "use client"
 
 import type { Article } from "@/types/message"
-import Image from "next/image"
+import { Image } from "@/components/ui/image"
 import { Button } from "@/components/ui/button"
 import { BookOpen } from "lucide-react"
 
