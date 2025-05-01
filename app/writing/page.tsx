@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft, Sparkles } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/components/ui/link"
 
 export default function WritingPage() {
   return (

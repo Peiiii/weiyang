@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { ArrowLeft, BookOpen, Check, ChevronRight, RotateCcw, Volume2 } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/components/ui/link"
 
 export default function VocabularyPage() {
   return (

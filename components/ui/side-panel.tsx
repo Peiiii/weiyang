@@ -5,7 +5,7 @@ import type React from "react"
 import { X, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
-import Link from "next/link"
+import { Link } from "@/components/ui/link"
 
 interface SidePanelProps {
   isOpen: boolean
